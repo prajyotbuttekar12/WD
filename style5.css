@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+
+} 
+body{min-height:100vh;
+    display: flex;
+    align-items:center;
+    background : radial-gradient( at 30% 40%,#8DEBFF ,#6CACFF );
+
+}
+.wrapper{
+    
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    max-width: 430px;
+    width:50%;
+    background: #fff;
+    padding: 34px;
+    border-radius:6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+.wrapper h2{
+    position: relative;
+   font-size:22px;
+   font-weight:600;
+   color:#333;
+}
+.wrapper h2::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom: 0;
+    height: 3px;
+    width:28px;
+    border-radius:12px;
+    background: #4070f4;
+}
+.wrapper form{
+    margin-top:10px;
+}
+.wrapper form .input-box{
+    height:40px;
+    margin:1px 0;
+
+}
+
+form .input-box input{
+    height:70%;
+    width:60%;
+    outline:none;
+    padding: 12 15px;
+    margin: auto;
+    font-size:15px;
+    color:#333;
+    border:0.5px solid #C7BEBE;
+    border-bottom-width:5px;
+    border-radius: 4px;
+    transition:all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+    border-color:#4070f4
+}
+form.Conditions{
+    display:flex;
+    align-items:center;
+  
+}
+
+form h3{
+    color: hsla(0, 0%, 3%, 0.889);
+    font-size: 16px;
+    font-weight :50;
+    margin-left: 10px;
+}
+.input-box-button input{
+    height:70%;
+    width:60%;
+    outline:none;
+    padding: 12 15px;
+    border-radius: 5px;
+    border-width: 40px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    display: inline-block;
+    margin: 14px,12px;
+    border: none;
+    color:white;
+    background-color: #0b47eb;
+    cursor: pointer;
+  }
+  
+  .input-box-button input:hover{
+    background:#6CACFF;
+}
+form.login h3{
+    color:#333;
+    width:50%;
+    text-align: centre;
+}
+
+form.login h3 a{
+    color:#4070f4;
+    text-decoration: none;
+}
+form.login h3 a:hover{
+    text-decoration: underline;
+}
